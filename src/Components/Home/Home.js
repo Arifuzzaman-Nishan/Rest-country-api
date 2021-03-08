@@ -11,7 +11,6 @@ const Home = () => {
             .then(res => res.json())
             .then(data => setCountries(data))
     }, [])
-    console.log(countries);
     return (
         <div className="container">
              <h1>Total Countries: {countries.length}</h1>

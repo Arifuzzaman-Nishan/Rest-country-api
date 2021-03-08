@@ -3,7 +3,6 @@ import { useParams } from 'react-router';
 
 const CountriesDetails = () => {
     const { name } = useParams();
-    console.log(name);
     const [countryName, setCountryName] = useState([]);
 
     useEffect(() => {
@@ -11,7 +10,7 @@ const CountriesDetails = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => setCountryName(data))
-    }, [countryName])
+    }, [name])
 
     return (
         <div>
