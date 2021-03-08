@@ -15,6 +15,7 @@ const App = () => {
     <div>
 
       <Router>
+        <Nav></Nav>
         <Switch>
           <Route path='/home'>
             <Home></Home>
